@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        android:title="Homes" />
+    <item
+        android:id="@+id/menu_profil"
+        android:icon="@drawable/ic_verified_user"
+        android:iconTint="@color/colorPrimary"
+        android:title="My Profil" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/ic_swap"
+        android:title="Logout" />
+
+</menu>

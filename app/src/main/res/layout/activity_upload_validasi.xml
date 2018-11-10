@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_25dp"
+            android:text="Validasi Eviden"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/iclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_choose_question01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Apakah Eviden yang disampaikan sesuai dengan Manual/Prosedur/IK ?" />
+
+        <RadioGroup
+            android:id="@+id/rg_no1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/id_rbt_tsesuai"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak Sesuai"
+                android:textSize="@dimen/size_12dp" />
+
+            <RadioButton
+                android:id="@+id/id_rbt_sesuai"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Sesuai"
+                android:textSize="@dimen/size_12dp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_choose_question02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Apakah eviden yang disampaikan memiliki analisis ?" />
+
+        <RadioGroup
+            android:id="@+id/rg_no2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_no2_a"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak Memiliki Analisis"
+                android:textSize="@dimen/size_12dp" />
+
+            <RadioButton
+                android:id="@+id/rb_no2_b"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Memiliki Analisis Awal"
+                android:textSize="@dimen/size_12dp" />
+
+            <RadioButton
+                android:id="@+id/rb_no2_c"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Memiliki Analisis Yang Mendalam / Menyeluruh / Komprehensif"
+                android:textSize="@dimen/size_12dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_choose_question03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Apakah eviden yang disampaikan memiliki usulan solusi ?" />
+
+        <RadioGroup
+            android:id="@+id/rg_no3a"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_no3a"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak Memiliki"
+                android:textSize="@dimen/size_12dp" />
+
+            <RadioButton
+                android:id="@+id/rb_no3b"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Memiliki Usulan Solusi Yang Implement-able"
+                android:textSize="@dimen/size_12dp" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/size_10dp">
+
+        <LinearLayout
+            android:id="@+id/id_upload_cancel"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Batal"
+                android:textSize="@dimen/size_15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_upload_attach"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Validasi"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_15dp" />
+        </LinearLayout>
+    </TableRow>
+
+</LinearLayout>

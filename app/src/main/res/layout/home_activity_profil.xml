@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSnow"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/service_desk"
+        app:border_color="@color/colorWhiteCombination"
+        app:border_width="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_profil_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Selamat Datang Di Aplikasi Kartini v.2" />
+
+        <TextView
+            android:id="@+id/txt_profil_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Pt. PLN (Persero) Tbk." />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/id_ly_txtprofil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Nama:" />
+
+            <TextView
+                android:id="@+id/id_name_user"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:hint="@string/nama_user" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Email " />
+
+            <TextView
+                android:id="@+id/id_email"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:hint="@string/email" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Username " />
+
+            <TextView
+                android:id="@+id/id_username"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:hint="username" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Bidang " />
+
+            <TextView
+                android:id="@+id/txt_bidang"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:hint="@string/id_bidang" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Sub Bidang " />
+
+            <TextView
+                android:id="@+id/txt_subid"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:hint="@string/id_subid" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/id_lv_edt_profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp"
+        android:visibility="gone">
+
+        <TableLayout
+            android:id="@+id/id_edt_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_10dp"
+            android:stretchColumns="1">
+
+            <EditText
+                android:id="@+id/id_edt_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_choose"
+                android:hint="@string/id_user"
+                android:padding="@dimen/size_10dp"
+                android:visibility="gone" />
+
+            <TableRow android:padding="@dimen/size_5dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Nama User " />
+
+                <EditText
+                    android:id="@+id/id_edt_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:background="@drawable/selector_choose"
+                    android:hint="@string/nama_user"
+                    android:padding="@dimen/size_10dp" />
+
+            </TableRow>
+
+
+            <TableRow android:padding="@dimen/size_5dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Email " />
+
+                <EditText
+                    android:id="@+id/id_edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:background="@drawable/selector_choose"
+                    android:hint="@string/email"
+                    android:padding="@dimen/size_10dp" />
+
+            </TableRow>
+
+            <TableRow android:padding="@dimen/size_5dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Username " />
+
+                <EditText
+                    android:id="@+id/id_edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:background="@drawable/selector_choose"
+                    android:hint="@string/username"
+                    android:padding="@dimen/size_10dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/id_lv_Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/id_update_profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Update My Profil"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_go_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:background="@drawable/bottom_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cancel Update Profil"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_lv_goUpdtae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp">
+
+        <LinearLayout
+            android:id="@+id/id_go_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Go Update My Profil"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_15dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="@dimen/size_10dp">
+
+    <LinearLayout
+        android:id="@+id/lv_row_upload_validasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_title_header_validasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="4.3.1 Procedur Pelayanan Mutu Dan Bisnis Proses"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:layout_marginTop="@dimen/size_5dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/linear_layout"
+                android:background="@drawable/line_break"
+                android:layerType="software" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_bobot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Bobot : 4"
+                android:textSize="@dimen/size_12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_mli_upload_validasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="end"
+                android:text="MLI : Belum Dinilai"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_description_validasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="4.3.1.IK1 Melaksanakan Challenge Session (go - No Go, Financial dan Kpi Impacted)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/id_validasi"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bottom_upload"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Validasi Eviden"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_edit" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:layout_marginTop="@dimen/size_5dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/linear_layout"
+                android:background="@drawable/line_break"
+                android:layerType="software" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_lv_status_eviden_validasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_doc_validasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="180129040123-laporan pelaksanaan kartini semester 2 th 2017 - eviden jan2018.pdf"
+                android:textSize="@dimen/size_12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_Date_status_eviden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Di Upload Pada : 29/10/2018"
+                android:textSize="@dimen/size_10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

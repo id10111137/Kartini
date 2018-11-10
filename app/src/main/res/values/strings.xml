@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Kartini 99</string>
+    <!--- Splash -->
+    <string name="app_ems">Kartini 99 v.2.0</string>
+    <string name="app_ems_txt">Karya TJB Terkini Berbasis PASS 99</string>
+    <string name="splash_name">Mohon Tunggu...</string>
+    <string name="no_connection">No Internet Connection</string>
+    <string name="Ofline_connection">Ofline Connection</string>
+
+    <!-- Login -->
+    <string name="welcome">Welcome Kartini 99 v.2.0</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="lupa_password">Lupa Password ? </string>
+    <string name="click_me"> Click Me</string>
+
+
+    <!-- Repassword -->
+    <string name="Repasword">Lupa Password</string>
+    <string name="mail">YourMail@pln.co.id</string>
+    <string name="sending">Kirim</string>
+    <string name="ada_account">Sudah Ada Account ? </string>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+
+    <!-- profil -->
+    <string name="id_user">A654678794</string>
+    <string name="id_unit">56+655+56</string>
+    <string name="nama_user">User Name</string>
+    <string name="email">ID.10111137@GMAIL.COM</string>
+    <string name="id_bidang">Dept Teknologi Informasi</string>
+    <string name="id_subid">Senior Android And Oracle Dev</string>
+    <string name="status_akun">AKTIF</string>
+    <string name="status_user">AKTIF</string>
+    <string name="last_login">20180707</string>
+    <string name="deadline">20180707</string>
+    <string name="lock_upload">FALSE</string>
+    <string name="photo">Username</string>
+    <string name="tujuan_jabatan">Riset And Development</string>
+    <string name="cookie">FALSE</string>
+
+    <!-- individu grafik -->
+    <string name="txt_pencapaian_individu"><u>Pencapaian Individu</u></string>
+
+    <string name="upload">Upload</string>
+
+
+</resources>

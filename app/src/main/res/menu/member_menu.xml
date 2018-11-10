@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menuone">
+        <item
+            android:id="@+id/mHomes"
+            android:enabled="true"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/mEviden_u"
+            android:enabled="true"
+            android:icon="@drawable/ic_cloud_upload"
+            android:title="Eviden" />
+
+        <item
+            android:id="@+id/mEviden_v"
+            android:enabled="true"
+            android:icon="@drawable/ic_eviden_validasi"
+            android:title="Validasi" />
+
+        <item
+            android:id="@+id/mML"
+            android:enabled="true"
+            android:icon="@drawable/ic_graphic"
+            android:title="MLI" />
+
+    </group>
+
+
+
+</menu>

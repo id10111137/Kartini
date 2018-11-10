@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_lyt_dm_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/id_lv_validasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRed"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_5dp">
+
+            <TextView
+                android:id="@+id/id_status_validasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_5dp"
+                android:hint="Belum Validasi"
+                android:textColor="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_no_status_validasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_5dp">
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/size_5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageView_validasi"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/service_desk"
+                app:border_color="@color/colorWhiteCombination"
+                app:border_width="3dp" />
+
+            <TextView
+                android:id="@+id/id_jabatan_validasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="SVP/STAFT"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_5dp">
+
+            <TextView
+                android:id="@+id/id_name_user_validasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Its My Name"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_location" />
+
+
+                <TextView
+                    android:id="@+id/id_subid_validasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Division Working" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/id_ip_validasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="IP : 0.00"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_ipk_validasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="IPK : 6.37"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_sumik_validasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah IK : 1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_5dp">
+
+        <TextView
+            android:id="@+id/id_pencapaian_bobot_validasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pencapian Bobot : 0.0 (0.0%)" />
+
+        <ProgressBar
+            android:id="@+id/id_progresrbar_validasi"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_15dp"
+            android:indeterminateBehavior="repeat"
+            android:max="100"
+            android:maxHeight="@dimen/size_15dp"
+            android:minHeight="@dimen/size_15dp"
+            android:progress="90"
+            android:scaleY="5"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target Bobot :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_bobot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="70%" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

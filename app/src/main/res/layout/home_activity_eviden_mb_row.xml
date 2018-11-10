@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lv_row_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/id_title_header_mb"
+            android:textStyle="bold"
+            android:hint="ini judulunya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/linear_layout"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:background="@drawable/line_break"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_bobotmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bobot : 4"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/id_mlimb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="MLI : Belum Dinilai"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/id_berlakumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id_berlakumb"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_descriptionmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="4.3.1.IK1 Melaksanakan Challenge Session (go - No Go, Financial dan Kpi Impacted)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lv_go_update"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/bottom_upload"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_upload_eviden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Eviden"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_file_upload" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/linear_layout"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:background="@drawable/line_break"
+                android:layerType="software" />
+
+            <LinearLayout
+                android:id="@+id/lv_status_eviden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/size_5dp">
+
+                <TextView
+                    android:id="@+id/id_docuploadmb"
+                    android:textSize="@dimen/size_12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="abcd.doc"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_tanggalmb"
+                    android:textSize="@dimen/size_12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Tanggal Upload : 20180707" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id_statusevidenmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum Ada Eviden"
+                android:textColor="@color/colorRed" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

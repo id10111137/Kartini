@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2bacc4</color>
+    <color name="colorPrimaryDark">#2c879f</color>
+    <!--<color name="colorPrimary">#25887F</color>-->
+    <!--<color name="colorPrimaryDark">#1D6A63</color>-->
+    <!--<color name="colorAccent">#2DA69A</color>-->
+    <color name="colorAccent">#4bc1d8</color>
+    <color name="colorWhiteCombination">#C5E6E3</color>
+    <color name="colorSnow">#FFFAFA</color>
+    <color name="colorSnowtwo">#F9F9F9</color>
+    <color name="colorDraks">#091F1C</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorYelow">#FFFFCC</color>
+</resources>
